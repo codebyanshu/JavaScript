@@ -65,11 +65,161 @@
 
 // 21.Create a function that reverse the each word of a given sentence.
 
-let sentence = "i am the great developer in the world."
+// let sentence = "i am the great developer in the world."
 
-let finalResult = sentence.split(' ').map(item=>item.split('').reverse().join(''));
+// let finalResult = sentence.split(' ').map(item=>item.split('').reverse().join(''));
 
-console.log(finalResult.join(' '));
+// console.log(finalResult.join(' '));
+
+// 22.In an array of numbers and strings, only add those numbers which are not strings.
+
+// let arr = [1, 2, 3, 'ash', 43, 'kjh', 78, 'anshu'];
+// let sum = 0;
+
+// arr.forEach(element => {
+//     if (typeof element === 'number') {
+//         sum += element;
+//     }
+// });
+// console.log(sum);
+
+// 23.How would you check a number is an integer or not?
+
+// let num = 37.87;
+
+// console.log(Number.isInteger(num));
+
+// // method 2
+
+// console.log(num % 1 === 0);
+
+// 24.Write a function that reverse a number.
+
+// function reverseNumber(num) {
+//     return Number(num.toString().split('').reverse().join(''));
+// }
+
+// let result = reverseNumber(1232);
+
+// console.log(result)
+
+// 25.Write a JavaScript function that return a passed string with letters in alphabetical order.
+
+// let str = "Anshu Kumar";
+// function reverseStr(str) {
+// return str.split('').sort().join('').trim();
+
+// method 2
+//     return str.split(' ').sort().join(' ');
+// }
+
+// let finalStr = reverseStr(str);
+// console.log(finalStr);
+
+// 26. Write a JavaScript function that accepts a string as a perameter and converts the first letter of each word of the string in UpperCase
+
+// let sentence = "hey i am Kumar Anshu";
+
+// const capitilizeLeter = (str) => {
+//     let resultArr = str.split(' ').map(word => {
+//         return (word.charAt(0).toUpperCase() + word.slice(1))
+//     });
+
+//     return (resultArr.join(' '))
+// }
+
+// let result = capitilizeLeter(sentence);
+// console.log(result)
+
+// 27.write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' element of the array.
+
+// function getArrayElement(arr) {
+//     let n = 0;
+//     if (!n) {
+//         return arr[0];
+//     }
+//     else if (n > arr.length) {
+//         console.log("element index not present")
+//     }
+//     else{
+//         return(arr.slice(0,n));
+//     }
+// }
+
+// let result = getArrayElement([2, 5, 6, 3, 7, 23],3);
+
+// console.log(result);
+
+// 28.Write a JavaScript function to get the number of occurences of each letter in specified string.
+
+/* let str = "Anshu Kumar";
+function getOccurence(string) {
+
+    let freqObj = {};
+    string.split('').forEach(letter => {
+        if (freqObj.hasOwnProperty(letter)) {
+            freqObj[letter]++;
+        }
+        else {
+            freqObj[letter] = 1;
+        }
+        console.log(letter);
+    });;
+    console.log(freqObj);
+
+    // for (let key in freqObj) {
+    //     console.log(`${key} aa raha ${freqObj[key]} bar`);
+    // }
+
+    let arr = freqObject.entries(freqObj);
+    arr.forEach(entryArr => {
+        console.log(`${entryArr[0]} apka ${entryArr[1]} baar aaya hai`);
+    })
+    // console.log(arr);
+}
+getOccurence(str); */
+
+// 29.Write a JavaScript function to get the number of occurence of most frequent item of an array.
+
+/* 
+let str = [1, 1, 2, 3, 4, 5, 5, 6, 7, 6, 5, 4, 3, 2, 1];
+function getOccurence(arr) {
+
+    let freqObj = {};
+    arr.forEach(letter => {
+        if (freqObj.hasOwnProperty(letter)) {
+            freqObj[letter]++;
+        }
+        else {
+            freqObj[letter] = 1;
+        }
+    });;
+    let maxFreq = (Math.max(...Object.values(freqObj)));
+
+    let keyValueArr = Object.entries(freqObj);
+    let filterArr = keyValueArr.filter(entryArr => {
+        return entryArr[1] === maxFreq
+    })
+    console.log(filterArr);
 
 
+    // for (let key in freqObj) {
+    //     console.log(`${key} aa raha ${freqObj[key]} bar`);
+    // }
+}
+getOccurence(str); */
+
+// 30. Write a JavaScript program to suffle an array
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let ind in arr) {
+//     let randomInd = Math.floor(Math.random()*arr.length);
+//     /* let temp = arr[ind];
+//     arr[ind] = arr[randomInd];
+//     arr[randomInd] = temp */;
+//     // Method 2 of swapping
+//     [ arr[ind],arr[randomInd]] = [arr[randomInd],arr[ind]];
+// }
+// console.log(arr);
 

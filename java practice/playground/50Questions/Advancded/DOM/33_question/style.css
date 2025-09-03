@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#Grand{
+    padding: 10px;
+    background-color: green;
+}
+#parent{
+    padding: 10px;
+    background-color: red;
+}
+#child{
+    background-color: lightgreen;
+    padding: auto;
+}
