@@ -57,12 +57,13 @@
 // ***Rest***
 
 // function sum(...rest) {
+//     console.log(arguments);
 //     console.log(rest);
 //     let sum = rest.reduce((acc, curt) => {
 //         return acc + curt;
 //     });
 //     return sum;
-//     // return a + b + c;
+    // return a + b + c;
 // }
 
 // let output = sum(1, 2, 3);
