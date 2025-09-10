@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(34, 33, 33);
+  color: white;
+}
+.mainContainer {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainContainer header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(34, 33, 33);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  gap: 1rem;
+}
+#taskInput {
+  width: 100%;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+.inputContainer > .addBtn {
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todoContainer > .todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightseagreen;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.todoContainer .todo button {
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.todoContainer .todo .saveBtn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: none; 
+}
+.todoContainer .todo #editInput {
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: none; 
+}
