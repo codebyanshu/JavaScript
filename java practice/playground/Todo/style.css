@@ -63,7 +63,15 @@ body {
 .todoContainer .todo button {
     padding: 8px 12px;
     border-radius: 5px;
-    
+}
 
-
+.todoContainer .todo .saveBtn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: none; 
+}
+.todoContainer .todo #editInput {
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: none; 
 }
